@@ -105,16 +105,18 @@
 <section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
-			<h2 class="article-detail__title">제목1</h2>
-
+			<div class="article-detail__main-info flex">
+				<h3 class="article-detail__board-name">[자유 게시판] &nbsp;</h3>
+				<h2 class="article-detail__title"> 제목1</h2>
+			</div>
 			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">자유</div>
+			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;테스터1</div>
 				<div class="article-detail__reg-date">2020-12-18 09:58:40</div>
-				<div class="article-detail__writer">테스터1</div>
+				<div><i class="fas fa-eye"></i>&nbsp;</div>
 			</div>
 
 			<div class="article-detail__body main-font">내용1</div>
-			
+
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
 				<script>
@@ -126,8 +128,8 @@
 					})();
 				</script>
 				<noscript>
-					Please enable JavaScript to view the
-					<a href="https://disqus.com/?ref_noscript">comments powered by
+					Please enable JavaScript to view the <a
+						href="https://disqus.com/?ref_noscript">comments powered by
 						Disqus.</a>
 				</noscript>
 			</div>
@@ -135,13 +137,12 @@
 			<div class="article-detail__menu flex">
 				<a title=""
 					href="article_detail_0.html"
-					class="hover-underline none">&lt;
-					이전글</a>
-				<a href="article_list_free_1.html"
-					class="hover-underline ">목록</a>
+					class="a-pointer-events-none">&lt;
+					이전글</a> <a href="article_list_free_1.html"
+					class="">목록</a>
 				<a title="제목2"
 					href="article_detail_2.html"
-					class="hover-underline ">다음글
+					class="">다음글
 					&gt;</a>
 			</div>
 		</div>
