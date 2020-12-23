@@ -121,10 +121,6 @@ a {
 	margin-left: 10px;
 }
 
-.logo>span>span {
-	color: red;
-}
-
 .logo--mini {
 	font-size: 2rem;
 }
@@ -132,7 +128,7 @@ a {
 
 /* 로고바 시작 */
 .logo-bar {
-	background-color: black;
+	background: radial-gradient(circle, black, darkblue);
 	color: white;
 	height: 150px;
 }
@@ -140,7 +136,7 @@ a {
 
 /* 메뉴바 시작 */
 .menu-bar {
-	background-color: black;
+	background: radial-gradient(circle, black, darkblue);
 	color: white;
 }
 
@@ -194,8 +190,7 @@ a {
 
 /* 하단바 시작 */
 .bottom-bar {
-	margin-top: 30px;
-	background-color: black;
+	background: radial-gradient(circle, black, darkblue);
 	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -332,3 +327,16 @@ a {
 }
 
 /* 게시물 상세 끝 */
+
+/* 배경이미지 시작 */
+.backgroundimg {
+	background-image:url('https://image.freepik.com/free-photo/office-table-with-cup-of-coffee-keyboard-and-notepad_1220-4584.jpg');
+	background-size:cover;
+	flex-basis: 100%;
+}
+
+.backgroundimg > div {
+	background-color:rgba(255,255,255,0.8);
+    padding: 0px 20px;
+}
+/* 배경이미지 끝 */

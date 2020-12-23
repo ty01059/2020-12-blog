@@ -3,6 +3,8 @@
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0JV64MZYX"></script>
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-6672613329449103" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -17,16 +19,20 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
+<!-- 파비콘 적용 -->
+<link rel=" shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico">
+
 </head>
 <body>
 	<div class="body-content min-height-100vh flex flex-column">
 		<!-- 로고바 시작 -->
 		<header class="logo-bar con-min-width">
 			<div class="con height-100p flex flex-jc-c">
-				<a href="#" class="logo flex flex-ai-c">
+				<a href="index.html" class="logo flex flex-ai-c">
 					<i class="fab fa-jenkins"></i>
 					<span>
-						Develo<span>p</span>ers
+						Blog
 					</span>
 				</a>
 			</div>
@@ -39,7 +45,7 @@
 				<nav class="menu-bar__menu-1">
 					<ul class="flex">
 						<li>
-							<a href="./" class="block">
+							<a href="index.html" class="block">
 								<i class="fas fa-home"></i>
 								<span>HOME</span>
 							</a>
@@ -86,7 +92,8 @@
 		</header>
 		<!-- 메뉴바 끝 -->
 
-		<main class="flex-grow-1">
+		<main class="flex-grow-1 backgroundimg flex flex-jc-c">
+		<div>
 			<section class="title-bar con-min-width">
 				<h1 class="con">
 					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
@@ -117,16 +124,18 @@
 		<div class="article-detail">
 			<div class="article-detail__main-info flex">
 				<h3 class="article-detail__board-name">[JAVA 게시판] &nbsp;</h3>
-				<h2 class="article-detail__title"> 2강, Variable</h2>
+				<h2 class="article-detail__title"> 2강, Variable(1)</h2>
 			</div>
 			<div class="article-detail__sub-info flex">
 			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;관리자</div>
-				<div class="article-detail__reg-date">2020-12-18 17:13:58</div>
-				<div><i class="fas fa-eye"></i>&nbsp;</div>
+				<div class="article-detail__reg-date">2020-12-20 13:47:09</div>
+				<div><i class="fas fa-eye"></i>&nbsp;2</div>
 			</div>
 
 			<div class="article-detail__body main-font"># Variable
-- 변수
+- 변수 선언
+- 변수에 이름을 정해 값을 저장할 수 있는 메모리 공간을 생성
+- 데이터 타입에 따라서 변수의 크기가 달라진다.
 
 # 변수의 타입
 
@@ -143,17 +152,19 @@
 ```
 ## 논리형
 ```
- - boolean 
+ - boolean : true, false
 ```
 ## 문자형
 ```
- - char 
+ - char : 'a', 'b' ... 
 ```
 ## 문자열
 ```
- - String
+ - String : 'abc' ...
 ```
-</div>
+
+# 예시
+# </div>
 
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
@@ -178,15 +189,15 @@
 					class="">&lt;
 					이전글</a> <a href="article_list_it_1.html"
 					class="">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="a-pointer-events-none">다음글
+				<a title="3강, Variable(2)"
+					href="article_detail_6.html"
+					class="">다음글
 					&gt;</a>
 			</div>
 		</div>
 	</div>
 </section>
-
+</div>
 </main>
 
 <footer class="bottom-bar con-min-width">
