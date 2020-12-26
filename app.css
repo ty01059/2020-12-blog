@@ -43,6 +43,10 @@ body, ul, li, h1, h2, h3 {
 	list-style: none;
 }
 
+body {
+	overflow: hidden;	
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -98,6 +102,26 @@ a {
 	display: block;
 }
 
+.position-relative {
+	position:relative;
+}
+
+.position-absolute {
+	position:absolute;
+}
+
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
+.overflow-y-auto {
+	overflow-y: auto;	
+}
+
 /* 커스텀 */
 .con-min-width {
 	min-width: 1200px;
@@ -110,6 +134,14 @@ a {
 .a-pointer-events-none {
 	pointer-events: none;
 	cursor: default;
+}
+
+.main-content {
+	height: 79vh;
+}
+
+.height-88per {
+	height: 88%;
 }
 
 /* 로고 시작 */
@@ -160,7 +192,10 @@ a {
 }
 
 .menu-bar__menu-1>ul ul {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
+    height: 0;
+    transition: height 1s;
 	position: absolute;
 	top: 100%;
 	left: -10px;
@@ -173,7 +208,9 @@ a {
 }
 
 .menu-bar__menu-1>ul>li:hover>ul {
-	display: block;
+	/* display: block; */
+	visibility: visible;
+    height: 168px;
 }
 
 .menu-bar__menu-1>ul ul>li:last-child>a {
@@ -194,6 +231,9 @@ a {
 	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .bottom-bar__site-info {
@@ -298,16 +338,11 @@ a {
 .article-detail__main-info {
 	font-size: 1.2rem;
 	padding-top: 0;
-	background-color:rgb(239 239 239);
 	padding-top: 20px;
 }
 
 .article-detail__main-info>* {
 	align-self:center;
-}
-
-.article-detail__sub-info {
-	background-color:rgb(239 239 239);
 }
 
 .article-detail__sub-info>* {
@@ -329,14 +364,15 @@ a {
 /* 게시물 상세 끝 */
 
 /* 배경이미지 시작 */
-.backgroundimg {
+.main-content > div:nth-child(1) {
 	background-image:url('https://image.freepik.com/free-photo/office-table-with-cup-of-coffee-keyboard-and-notepad_1220-4584.jpg');
 	background-size:cover;
-	flex-basis: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
 }
 
-.backgroundimg > div {
-	background-color:rgba(255,255,255,0.8);
+.main-content > div:last-child {
     padding: 0px 20px;
 }
 /* 배경이미지 끝 */
