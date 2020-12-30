@@ -54,7 +54,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, 
   maximum-scale=0.3, minimum-scale=0.3" />
 
-<title>Blog | ARTICLE DETAIL</title>
+<title>Blog | ARTICLE LIST JAVA</title>
 
 <meta name="google-site-verification"
 	content="P3TaZ-4fh-rMYo6dUuy7t4gVVqYiJzUpGX3n2UbOIoQ" />
@@ -116,161 +116,27 @@
 				<div class="position-absolute con-min-width"></div>
 				<div class="position-absolute background-opacity overflow-x-hidden height-88per overflow-y-auto">
 					<section class="title-bar con-min-width">
-						<h1 class="con"><i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span></h1>
-					</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
-
-<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-
-<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-<!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet"
-	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
-
-<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script
-	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
-
-<section class="section-1 con-min-width">
+						<h1 class="con"><i class="fas fa-flag"></i> <span>JAVA LIST</span></h1>
+					</section><section class="section-1 con-min-width">
 	<div class="con">
-		<div class="article-detail">
-			<div class="article-detail__main-info flex">
-				<h3 class="article-detail__board-name">[JAVA 게시판] &nbsp;</h3>
-				<h2 class="article-detail__title"> 5강, 객체 지향 프로그래밍</h2>
-			</div>
-			<div class="article-detail__sub-info flex">
-			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;관리자</div>
-				<div class="article-detail__reg-date">2020-12-22 08:51:00</div>
-				<div><i class="fas fa-heart"></i>&nbsp;0</div>
-				<div><i class="fas fa-comments"></i>&nbsp;0</div>
-			</div>
-			
-			<div class="article-detail__body main-font"># 객체지향 프로그래밍
+		<div class="article-list">
+			<header>
+				<div>
+					<div class="article-list__cell-id">번호</div>
+					<div class="article-list__cell-reg-date">날짜</div>
+					<div class="article-list__cell-writer">작성자</div>
+					<div class="article-list__cell-title">제목</div>
+				</div>
+			</header>
+			<main>
+				<div><div class="article-list__cell-id">8</div><div class="article-list__cell-reg-date">2020-12-22 08:51:00</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_8.html" class="hover-underline">5강, 객체 지향 프로그래밍</a></div></div><div><div class="article-list__cell-id">7</div><div class="article-list__cell-reg-date">2020-12-22 08:51:00</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_7.html" class="hover-underline">4강, 제어문</a></div></div><div><div class="article-list__cell-id">6</div><div class="article-list__cell-reg-date">2020-12-22 08:51:00</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_6.html" class="hover-underline">3강, Variable(2)</a></div></div><div><div class="article-list__cell-id">5</div><div class="article-list__cell-reg-date">2020-12-18 13:32:10</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_5.html" class="hover-underline">2강, Variable(1)</a></div></div><div><div class="article-list__cell-id">4</div><div class="article-list__cell-reg-date">2020-12-18 13:32:10</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_4.html" class="hover-underline">1강, Class</a></div></div>
+			</main>
+		</div>
 
-```java
- - java : 객체지향 프로그래밍 언어
-```
-
-# 개념
-
-## 클래스
-```
- - 객체를 만드는 기능
- - 클래스 내에서 변수를 선언할 수 있다. (=객체 변수)
- - 메소드를 이용해서 클래스의 변수에 값을 입력할 수 있다.
- - 객체 변수는 공유되지 않는다.
- 
- ex)
-public class Animal {
-    String name;
-}
-
-// 선언, 접근 가능
-Animal animal = new Animal();
-animal.name;
-```
-
-## 메소드
-```
- - 클래스 내의 함수
- - 입력값과 리턴값을 필요에 따라서 작성할 수 있다.
- - return; 만 단독으로 쓰일 경우 메소드를 즉시 빠져나간다.
- 
- ex)
-public class Test {
-    // 메소드 작성
-    public int sum(int a, int b) {
-        return a+b;
-    }
-}
-```
-
-## call by value
-```
- - 메소드로 객체를 전달할 경우 메소드에서 객체의 객체변수 값을 변경할 수 있다.
-```
-
-## 상속
-```
- - 자식 클래스 extends 부모 클래스 { }
- - extends 를 사용하여 부모 클래스의 기능을 상속 받을 수 있다.
- - IS-A 관계 (상위 하위 개념관계 or 상속관계)
- - 자식 클래스는 부모 클래스의 메소드를 오버라이딩, 오버로딩을 할 수 있다.
- - 자바는 다중 상속을 지원하지 않는다.
- 
-ex)
-public class Dog extends Animal { }
-```
-
-## 생성자
-```
- - 클래스 객체를 생성시 객체에 값을 넣을 수 있다.
- - 메소드명과 클래스명이 동일해야 한다.
- - 리턴타입을 정의하지 않는다.
- - 생성자 오버로딩 가능.
-```
-
-## 인터페이스
-```
- - 상위 개념이 같은 종류들의 구조를 모아놓은 것
-```
-
-## 추상클래스
-```
- - 서로 다른 클래스 간에 비슷한 필드와 메서드를 공통적으로 추출해서 만든 클래스
- - 추상클래스는 메서드와 내용이 구체적이지 않기 때문에 객체를 생성할 수 없다.
- - 실제 클래스는 추상클래스를 상속받는다.
- - abstract 를 사용
- - 추상클래스 변수에 추상클래스를 상속받아 구현한 실제클래스 인스턴스를 주입하면 해당 추상클래스 변수는 자동 타입변환을 발생시켜 실제클래스 인스턴스처럼 사용할 수 있는데, 이것을 타입의 다형성이라 한다.
- 
-ex)
-public abstract class 클래스명 {
-  //필드
-  //생성자
-  //메서드
-  //추상메서드
-}
-```</div>
-			
-			<div class="article-detail__reply-box">
-				<div id="disqus_thread"></div>
-				<script>
-				var disqus_config = function () {
-			        this.page.url = 'https://blog.yhj.kr/article_detail_8.html';
-			        this.page.identifier = 'article_detail_8.html';
-			    };
-				(function() { // DON'T EDIT BELOW THIS LINE
-					var d = document, s = d.createElement('script');
-					s.src = 'https://custom-blog.disqus.com/embed.js';
-					s.setAttribute('data-timestamp', +new Date());
-					(d.head || d.body).appendChild(s);
-				})();
-			</script>
-				<noscript>
-					Please enable JavaScript to view the <a
-						href="https://disqus.com/?ref_noscript">comments powered by
-						Disqus.</a>
-				</noscript>
-			</div>
-
-			<div class="article-detail__menu flex">
-				<a title="4강, 제어문"
-					href="article_detail_7.html"
-					class="">&lt;
-					이전글</a> <a href="article_list_java_1.html"
-					class="">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="a-pointer-events-none">다음글
-					&gt;</a>
-			</div>
+		<div class="article-page-menu">
+			<ul class="flex flex-jc-c">
+				<li><a href="article_list_java_1.html" class="flex flex-ai-c article-page-menu__link--selected">1</a></li>
+			</ul>
 		</div>
 	</div>
 </section>
