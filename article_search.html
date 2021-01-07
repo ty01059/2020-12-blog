@@ -55,7 +55,7 @@
 <meta itemprop="description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
-<title>Blog | ARTICLE LIST JSP</title>
+<title>Blog | ARTICLE SEARCH</title>
 
 <meta name="google-site-verification"
 	content="P3TaZ-4fh-rMYo6dUuy7t4gVVqYiJzUpGX3n2UbOIoQ" />
@@ -120,9 +120,22 @@
 				<div
 					class="position-absolute background-opacity overflow-x-hidden height-88per overflow-y-auto">
 					<section class="title-bar con-min-width">
-						<h1 class="con"><i class="fas fa-clipboard-list"></i> <span>JSP LIST</span></h1>
-					</section><section class="section-1 con-min-width">
+						<h1 class="con"><i class="fas fa-search"></i> <span>ARTICLE SEARCH</span></h1>
+					</section><!-- lodash 불러오기 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+
+<!-- vue 불러오기 -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<section id="article-list-wrap" class="section-1 con-min-width">
 	<div class="con">
+		<div class="article-search">
+			<form class="block">
+				<input @input="searchKeywordInputed" type="text" placeholder="검색어"
+					:value="searchKeyword">
+			</form>
+		</div>
 		<div class="article-list">
 			<header>
 				<div>
@@ -133,19 +146,22 @@
 				</div>
 			</header>
 			<div class="main">
-				<div><div class="article-list__cell-id">9</div><div class="article-list__cell-reg-date">2021-01-04 16:47:09</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_9.html" class="hover-underline">JSP 시작</a></div></div>
+				<div v-for="article in filtered">
+					<div class="article-list__cell-id">{{article.id}}</div>
+					<div class="article-list__cell-reg-date">{{article.regDate}}</div>
+					<div class="article-list__cell-writer">{{article.writer}}</div>
+					<div class="article-list__cell-title">
+						<a :href="'article_detail_' + article.id + '.html'" target="_blank"
+							class="hover-underline">{{article.title}}</a>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div class="article-page-menu">
-			<ul class="flex flex-jc-c">
-				<li><a href="article_list_jsp_1.html" class="flex flex-ai-c article-page-menu__link--selected">1</a></li>
-			</ul>
 		</div>
 	</div>
 </section>
 </div>
-<footer class="bottom-bar con-min-width">
+
+<script src="article_search.js"></script><footer class="bottom-bar con-min-width">
 	<div class="con flex flex-ai-c">
 		<a href="#" class="logo logo--mini flex flex-ai-c">
 			<i class="fab fa-jenkins"></i>
