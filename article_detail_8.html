@@ -19,28 +19,30 @@
 
 <meta charset="UTF-8" />
 
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=1200">
+<meta name="apple-mobile-web-app-title" content="Blog" />
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.yhj.kr" />
-<meta name="subject" content="개발자의 기술/일상 블로그" />
+<meta name="subject" content="개발자의 기술/일상 블로그"/>
 <meta name="title" content="Blog" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Blog" />
-<meta name="pubdate" content="2021-01-18T18:11:38" />
-<meta name="lastmod" content="2021-01-18T18:11:38" />
+<meta name="pubdate" content="2021-01-21T17:20:54" />
+<meta name="lastmod" content="2021-01-21T17:20:54" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Blog" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="개발자의 기술/일상 블로그" />
 <meta property="og:description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:image"
-	content="https://image.freepik.com/free-photo/office-table-with-cup-of-coffee-keyboard-and-notepad_1220-4584.jpg" />
+<meta property="og:image" content="https://blog.yhj.kr/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="blog.yhj.kr" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-18T18:11:38" />
-<meta property="og:pubdate" content="2021-01-18T18:11:38" />
+<meta property="og:updated_time" content="2021-01-21T17:20:54"/>
+<meta property="og:pubdate" content="2021-01-21T17:20:54" />
 <meta property="og:url" content="https://blog.yhj.kr" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -62,12 +64,39 @@
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" href="app.css" />
+
 <!-- 파비콘 적용 -->
 <link rel=" shortcut icon" href="favicon.ico" />
 <link rel="icon" href="favicon.ico" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"
+	defer></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"
+	defer></script>
+
+<link rel="stylesheet" href="app.css" />
+<script src="app.js" defer></script>
 
 </head>
 <body>
@@ -95,7 +124,7 @@
 						</a></li>
 						<li><a class="block"> <i class="fas fa-list"></i> <span>ARTICLES</span>
 						</a>
-							<ul><li><a href="article_list_jsp_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>JSP LIST</span></a></li><li><a href="article_list_java_1.html" class="block"><i class="fas fa-flag"></i> <span>JAVA LIST</span></a></li><li><a href="article_list_free_1.html" class="block"><i class="fab fa-free-code-camp"></i> <span>FREE LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
+							<ul><li><a href="article_list_js_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>JS LIST</span></a></li><li><a href="article_list_java_1.html" class="block"><i class="fas fa-flag"></i> <span>JAVA LIST</span></a></li><li><a href="article_list_jspcommunity_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>JSPCOMMUNITY LIST</span></a></li><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-flag"></i> <span>NOTICE LIST</span></a></li>
 							</ul></li>
 						<li><a class="block"> <i class="fas fa-link"></i> <span>LINK</span>
 						</a>
@@ -123,28 +152,7 @@
 					class="position-absolute background-opacity overflow-x-hidden height-88per overflow-y-auto">
 					<section class="title-bar con-min-width">
 						<h1 class="con"><i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span></h1>
-					</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
-
-<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-
-<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-<!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet"
-	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
-
-<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script
-	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
-
-<section class="section-1 con-min-width">
+					</section><section class="section-1 con-min-width">
 	<div class="con">
 		<div class="article-detail">
 			<div class="article-detail__main-info flex">
@@ -160,7 +168,8 @@
 				<div><i class="fas fa-comments"></i>&nbsp;0</div>
 			</div>
 			
-			<div class="article-detail__body main-font"># 객체지향 프로그래밍
+			
+			<script type="text/x-template"># 객체지향 프로그래밍
 
 ```java
  - java : 객체지향 프로그래밍 언어
@@ -245,7 +254,8 @@ public abstract class 클래스명 {
   //메서드
   //추상메서드
 }
-```</div>
+```</script>
+			<div class="article-detail__body main-font toast-ui-viewer"></div>
 			
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
@@ -256,7 +266,7 @@ public abstract class 클래스명 {
 			    };
 				(function() { // DON'T EDIT BELOW THIS LINE
 					var d = document, s = d.createElement('script');
-					s.src = 'https://custom-blog.disqus.com/embed.js';
+					s.src = 'https://my-ssg.disqus.com/embed.js';
 					s.setAttribute('data-timestamp', +new Date());
 					(d.head || d.body).appendChild(s);
 				})();
@@ -301,6 +311,5 @@ public abstract class 클래스명 {
 </div>
 </main>
 </div>
-<script src="app.js"></script>
 </body>
 </html>

@@ -57,7 +57,7 @@
 <meta itemprop="description" content="개발자의 기술/일상 관련 글들을 공유합니다." />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
-<title>Blog | ARTICLE DETAIL</title>
+<title>Blog | ARTICLE LIST JS</title>
 
 <meta name="google-site-verification"
 	content="P3TaZ-4fh-rMYo6dUuy7t4gVVqYiJzUpGX3n2UbOIoQ" />
@@ -151,90 +151,27 @@
 				<div
 					class="position-absolute background-opacity overflow-x-hidden height-88per overflow-y-auto">
 					<section class="title-bar con-min-width">
-						<h1 class="con"><i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span></h1>
+						<h1 class="con"><i class="fas fa-clipboard-list"></i> <span>JS LIST</span></h1>
 					</section><section class="section-1 con-min-width">
 	<div class="con">
-		<div class="article-detail">
-			<div class="article-detail__main-info flex">
-				<h3 class="article-detail__board-name">[Java Script 게시판] &nbsp;</h3>
-				<h2 class="article-detail__title"> 변수</h2>
-				&nbsp;&nbsp;&nbsp;&nbsp;
-				<div><i class="fas fa-eye"></i>&nbsp;0</div>
+		<div class="article-list">
+			<header>
+				<div>
+					<div class="article-list__cell-id">번호</div>
+					<div class="article-list__cell-reg-date">날짜</div>
+					<div class="article-list__cell-writer">작성자</div>
+					<div class="article-list__cell-title">제목</div>
+				</div>
+			</header>
+			<div class="main">
+				<div><div class="article-list__cell-id">10</div><div class="article-list__cell-reg-date">2021-01-13 17:17:43</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_10.html" class="hover-underline">변수</a></div></div><div><div class="article-list__cell-id">9</div><div class="article-list__cell-reg-date">2021-01-04 16:47:09</div><div class="article-list__cell-writer">관리자</div><div class="article-list__cell-title"><a href="article_detail_9.html" class="hover-underline">Java Script 시작</a></div></div>
 			</div>
-			<div class="article-detail__sub-info flex">
-			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;관리자</div>
-				<div class="article-detail__reg-date">2021-01-13 17:17:43</div>
-				<div><i class="fas fa-heart"></i>&nbsp;0</div>
-				<div><i class="fas fa-comments"></i>&nbsp;0</div>
-			</div>
-			
-			
-			<script type="text/x-template"># 변수
-```
- - 데이터를 담이놓은 공간
- - 변수에 담긴 데이터 타입에 따라서 사용 방법이 다르다.
- - var, let, const 을(를) 사용하여 선언한다.
-```
+		</div>
 
-# 명명규칙
-```
- * 변수 선언을 할 때는 규칙이 있다.
-
- 1) 시작문자는 영문자, _, $중 하나로 시작해야한다.
- 2) 예약어는 사용할 수 없다. ( switch
- 3) 영문자의 대소문자를 구분한다.
-```
-
-# 명명기법
-```
- - 카멜 기법
- - 파스칼 기법
- - 언더스코어 기법
-```
-
-# 종류
-```
-1) function-scoped
-- var : 다양한, 넓은 공간에서 사용 가능
-
-2) block-scoped
-- const : 재선언, 재할당이 불가능하다. (한번 선언하면 같은 이름으로는 데이터변경 불가능)
-- let : 재할당이 가능하다. (한번 선언해도 다시 데이터 할당이 가능)
-```</script>
-			<div class="article-detail__body main-font toast-ui-viewer"></div>
-			
-			<div class="article-detail__reply-box">
-				<div id="disqus_thread"></div>
-				<script>
-				var disqus_config = function () {
-			        this.page.url = 'https://blog.yhj.kr/article_detail_10.html';
-			        this.page.identifier = 'article_detail_10.html';
-			    };
-				(function() { // DON'T EDIT BELOW THIS LINE
-					var d = document, s = d.createElement('script');
-					s.src = 'https://my-ssg.disqus.com/embed.js';
-					s.setAttribute('data-timestamp', +new Date());
-					(d.head || d.body).appendChild(s);
-				})();
-			</script>
-				<noscript>
-					Please enable JavaScript to view the <a
-						href="https://disqus.com/?ref_noscript">comments powered by
-						Disqus.</a>
-				</noscript>
-			</div>
-
-			<div class="article-detail__menu flex">
-				<a title="Java Script 시작"
-					href="article_detail_9.html"
-					class="">&lt;
-					이전글</a> <a href="article_list_js_1.html"
-					class="">목록</a>
-				<a title=""
-					href="article_detail_0.html"
-					class="a-pointer-events-none">다음글
-					&gt;</a>
-			</div>
+		<div class="article-page-menu">
+			<ul class="flex flex-jc-c">
+				<li><a href="article_list_js_1.html" class="flex flex-ai-c article-page-menu__link--selected">1</a></li>
+			</ul>
 		</div>
 	</div>
 </section>
