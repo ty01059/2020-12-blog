@@ -155,38 +155,47 @@
 	<div class="con">
 		<div class="article-detail">
 			<div class="article-detail__main-info flex">
-				<h3 class="article-detail__board-name">[JSP 개발일지 게시판] &nbsp;</h3>
-				<h2 class="article-detail__title"> JSP 개발 일지 1</h2>
+				<h3 class="article-detail__board-name">[Java Script 게시판] &nbsp;</h3>
+				<h2 class="article-detail__title"> 이벤트</h2>
 				&nbsp;&nbsp;&nbsp;&nbsp;
 				<div><i class="fas fa-eye"></i>&nbsp;0</div>
 			</div>
 			<div class="article-detail__sub-info flex">
 			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;관리자</div>
-				<div class="article-detail__reg-date">2021-01-21 16:02:16</div>
+				<div class="article-detail__reg-date">2021-02-09 18:02:28</div>
 				<div><i class="fas fa-heart"></i>&nbsp;0</div>
 				<div><i class="fas fa-comments"></i>&nbsp;0</div>
 			</div>
 			
 			
-			<script type="text/x-template"># JSP Community
+			<script type="text/x-template"># EVENT
 ```
-- JSP와 서블릿을 사용하여 커뮤니티 개발
-
-- 게시판 기능
-  - 회원가입
-    - 아이디 중복 확인
-  - 로그인, 로그아웃
-  - 게시글 작성, 수정, 삭제
-  - 리스트, 상세보기
-  - 접근 권한 체크
-  - CSS, JS 적용
-  
-- sts4, 이클립스, 톰캣, 서블릿, JSP 사용
+- HTML 페이지에서 JavaScript가 사용되는 경우 이벤트에 대해 반응할 수 있다.
+- event는 브라우저가 수행하는 작업이거나 사용자가 수행하는 작업일 수 있다.
+- event가 발생하는 예시
+ex)
+* HTML 웹 페이지 로드가 완료
+* HTML 입력 필드가 변경
+* HTML 버튼을 클릭
 ```
 
-# JSP developers video
-```youtube
-SoWYUaVeAo
+# 사용예시
+```
+- 작은 따옴표, 큰 따옴표 모두 사용 가능
+ex)
+<element event='some JavaScript'>
+<element event="some JavaScript">
+
+```
+
+# 일반적인 HTML event 몇가지
+```
+- onchange : HTML 요소가 변경되었습니다.
+- onclick : 사용자가 HTML 요소를 클릭
+- onmouseover : 사용자가 HTML 요소 위로 마우스를 이동
+- onmouseout : 사용자가 HTML 요소에서 마우스를 이동
+- onkeydown : 사용자가 키보드 키를 누름
+- onload : 브라우저가 페이지 로드를 완료
 ```</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
 			
@@ -194,8 +203,8 @@ SoWYUaVeAo
 				<div id="disqus_thread"></div>
 				<script>
 				var disqus_config = function () {
-			        this.page.url = 'https://blog.yhj.kr/article_detail_11.html';
-			        this.page.identifier = 'article_detail_11.html';
+			        this.page.url = 'https://blog.yhj.kr/article_detail_16.html';
+			        this.page.identifier = 'article_detail_16.html';
 			    };
 				(function() { // DON'T EDIT BELOW THIS LINE
 					var d = document, s = d.createElement('script');
@@ -212,14 +221,14 @@ SoWYUaVeAo
 			</div>
 
 			<div class="article-detail__menu flex">
+				<a title="객체"
+					href="article_detail_15.html"
+					class="">&lt;
+					이전글</a> <a href="article_list_js_1.html"
+					class="">목록</a>
 				<a title=""
 					href="article_detail_0.html"
-					class="a-pointer-events-none">&lt;
-					이전글</a> <a href="article_list_jspcommunity_1.html"
-					class="">목록</a>
-				<a title="JSP 개발 일지 2"
-					href="article_detail_13.html"
-					class="">다음글
+					class="a-pointer-events-none">다음글
 					&gt;</a>
 			</div>
 		</div>

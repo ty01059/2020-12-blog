@@ -155,38 +155,50 @@
 	<div class="con">
 		<div class="article-detail">
 			<div class="article-detail__main-info flex">
-				<h3 class="article-detail__board-name">[JSP 개발일지 게시판] &nbsp;</h3>
-				<h2 class="article-detail__title"> JSP 개발 일지 1</h2>
+				<h3 class="article-detail__board-name">[Java Script 게시판] &nbsp;</h3>
+				<h2 class="article-detail__title"> 객체</h2>
 				&nbsp;&nbsp;&nbsp;&nbsp;
 				<div><i class="fas fa-eye"></i>&nbsp;0</div>
 			</div>
 			<div class="article-detail__sub-info flex">
 			<div class="article-detail__writer"><i class="fas fa-user-edit"></i>&nbsp;관리자</div>
-				<div class="article-detail__reg-date">2021-01-21 16:02:16</div>
+				<div class="article-detail__reg-date">2021-02-08 19:24:53</div>
 				<div><i class="fas fa-heart"></i>&nbsp;0</div>
 				<div><i class="fas fa-comments"></i>&nbsp;0</div>
 			</div>
 			
 			
-			<script type="text/x-template"># JSP Community
+			<script type="text/x-template"># 객체
 ```
-- JSP와 서블릿을 사용하여 커뮤니티 개발
-
-- 게시판 기능
-  - 회원가입
-    - 아이디 중복 확인
-  - 로그인, 로그아웃
-  - 게시글 작성, 수정, 삭제
-  - 리스트, 상세보기
-  - 접근 권한 체크
-  - CSS, JS 적용
-  
-- sts4, 이클립스, 톰캣, 서블릿, JSP 사용
+- 객체 속성은 동일할 수 있지만, 속성 값은 객체마다 다르다.
+- 모든 객체는 동일한 방법이 있지만 방법이 실행되는 시간은 각각 다르다.
+- 객체는 많은 값을 포함할 수 있다.
+- JS 객체는 속성 또는 매서드라고 하는 명명 된 값의 컨테이너
+- 문자열, 숫자, boolean 을 객체로 선언하면 코드가 복잡해지고 실행 속도가 느려진다.
 ```
 
-# JSP developers video
-```youtube
-SoWYUaVeAo
+# 객체 정의
+```
+- 객체 리터럴을 사용하여 정의
+- 공백과 줄 바꿈을 사용해도 된다.
+- {이름 : 값} 쌍을 속성이라고 한다.
+ex)
+var car = {type:"Fiat", model:"500", color:"white"};
+
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
+
+# 객체 속성 접근
+```
+- objectName.propertyName
+- objectName["propertyName"]
 ```</script>
 			<div class="article-detail__body main-font toast-ui-viewer"></div>
 			
@@ -194,8 +206,8 @@ SoWYUaVeAo
 				<div id="disqus_thread"></div>
 				<script>
 				var disqus_config = function () {
-			        this.page.url = 'https://blog.yhj.kr/article_detail_11.html';
-			        this.page.identifier = 'article_detail_11.html';
+			        this.page.url = 'https://blog.yhj.kr/article_detail_15.html';
+			        this.page.identifier = 'article_detail_15.html';
 			    };
 				(function() { // DON'T EDIT BELOW THIS LINE
 					var d = document, s = d.createElement('script');
@@ -212,13 +224,13 @@ SoWYUaVeAo
 			</div>
 
 			<div class="article-detail__menu flex">
-				<a title=""
-					href="article_detail_0.html"
-					class="a-pointer-events-none">&lt;
-					이전글</a> <a href="article_list_jspcommunity_1.html"
+				<a title="연산자"
+					href="article_detail_14.html"
+					class="">&lt;
+					이전글</a> <a href="article_list_js_1.html"
 					class="">목록</a>
-				<a title="JSP 개발 일지 2"
-					href="article_detail_13.html"
+				<a title="이벤트"
+					href="article_detail_16.html"
 					class="">다음글
 					&gt;</a>
 			</div>
